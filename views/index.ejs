@@ -1,0 +1,5 @@
+<%- include('./_partials/_layout-start') %> 
+    <% products.forEach(product => { %>
+      <%- include('./_partials/card', {data: { title: product.name, subtitle: product.price + ' €', picture: product.picture }}) %>
+    <% }) %>
+<%- include('./_partials/_layout-end') %> 

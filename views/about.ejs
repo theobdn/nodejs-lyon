@@ -1,0 +1,7 @@
+<%- include('./_partials/_layout-start') %> 
+
+<% persons.forEach(person => { %>
+  <%- include('./_partials/card', {data: { title: person.name, subtitle: person.age + ' ans' }}) %>
+<% }) %>
+
+<%- include('./_partials/_layout-end') %> 
